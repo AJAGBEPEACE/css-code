@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200px;
+    text-align: center;
+  background-image: url(/Animated_fire_by_nevit.gif);
+    color: transparent;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}

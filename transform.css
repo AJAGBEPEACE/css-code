@@ -1,0 +1,12 @@
+#section{
+    display: flex;
+    min-height: 70vh;
+    border: thick solid blue;
+}
+section div{
+    background-color: blue;
+    width: 30%;
+    height: 250px;
+    margin: 10px;
+}
+section

@@ -1,0 +1,106 @@
+#container {
+    border-image-source: url(download.jpg);
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 100px auto;
+    perspective: 1000px;
+}
+
+#container .items {
+    /* width: 30%; */
+    margin: 50px auto;
+}
+
+#container .items div:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    background-color: #2f80ec;
+    border-radius: 15px;
+    margin-bottom: 3px;
+}
+
+#container .items div:nth-child(2) {
+    width: 25px;
+    height: 70px;
+    background-color: #2c9cdb;
+    border-radius: 15px;
+    z-index: -20;
+}
+
+#container .items div:nth-child(3) {
+    width: 8px;
+    height: 25px;
+    background-color: #2f80ec;
+    transform: translate(-7px, -68px) rotate(50deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(4) {
+    width: 8px;
+    height: 30px;
+    background-color: #2f80ec;
+    transform: translate(-16px, -79px) rotate(10deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(5) {
+    width: 8px;
+    height: 30px;
+    background-color: #56ccf2;
+    transform: translate(25px, -128px) rotate(-60deg);
+    border-radius: 7px;
+    z-index: -99;
+}
+
+#container .items div:nth-child(6) {
+    width: 8px;
+    height: 20px;
+    background-color: #56ccf2;
+    transform: translate(40px, -151px) rotate(56deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(7) {
+    width: 8px;
+    height: 25px;
+    background-color: #2f80ec;
+    transform: translate(0, -115px) rotate(20deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(8) {
+    width: 8px;
+    height: 30px;
+    background-color: #2f80ec;
+    transform: translate(-11px, -125px) rotate(220deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(9) {
+    width: 8px;
+    height: 25px;
+    background-color: #2f80ec;
+    transform: translate(15px, -170px) rotate(-40deg);
+    border-radius: 7px;
+}
+
+#container .items div:nth-child(10) {
+    width: 8px;
+    height: 30px;
+    background-color: #2f80ec;
+    transform: translate(23px, -180px) rotate(-10deg);
+    border-radius: 7px;
+}
+
+#container div:nth-child(2) {
+    transform: rotateY(180deg);
+}
+
+#container div:nth-child(4) {
+    transform: rotateY(-50deg) scale(100%,120%);
+}
+
+#container div:nth-child(5) {
+    transform: rotateY(180deg) scale(150%,100%);
+}

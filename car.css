@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.aeroplane{
+    margin-left: 120vh;
+    animation: aero 3s linear infinite;
+}
+@keyframes aero {
+    100% {
+        transform: translate(-200vh);
+    }   
+}
+.highway {
+    height: 100px;
+    width: 500%;
+    display: block;
+    background-image: url(./images/roadd.webp);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    /* background: repeat-x; */
+    animation: highway 5s linear infinite;
+}
+@keyframes highway {
+    100% {
+        transform: translateX(-3400px) ;
+    }
+}
+.city {
+    height: 400px;
+    width: 500%;
+    /* background-image: url(./images/city2-removebg-preview.png); */
+    position: absolute;
+    /* bottom: 200px; */
+    /* left: 0; */
+    /* right: 0; */
+    /* display: block; */
+    z-index: 1;
+    background-repeat: no-repeat;
+    /* animation: city 20s linear infinite; */
+    bottom: -20vh;
+}
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 00px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img {
+    width: 60%;
+    margin-left: -70vh;
+    animation: car 3s linear infinite;
+}
+@keyframes car {
+    100% {
+        transform: translate(200vh);
+    }
+}
+.wheel {
+right: 170%;
+bottom: 19px;
+height: 30px;
+/* right: 100px; */
+/* width: 10px; */
+transform: translateX(-50%);
+position: absolute;
+z-index: 2;
+}
+.wheel img {
+    width: 45px;
+    height: 45px;
+    animation: wheel 1s linear infinite;
+    animation-duration: 3s;
+    animation-play-state: running;
+    margin-left: 230%;
+}
+@keyframes wheel {
+    100%{
+        transform: translate(200vh) rotate(360deg) ;
+    }
+}
+.back-wheel {
+    left: -25vh;
+    position: absolute;
+    
+}
+.front-wheel {
+    /* left: 30vh; */
+    position: absolute;
+
+}
+

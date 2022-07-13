@@ -1,0 +1,40 @@
+
+body{
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+.background{
+    background-image: url(/images/sky.jpg);
+    width: 100%;
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+}
+.road{
+    background-image: url(/images/roadd.webp);
+    background-size: contain;
+    margin-top: -23vh;
+    height: 30vh;
+    animation-name: road;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: inherit;
+    background-repeat: repeat-x;
+    /* animation-direction: alternate; */
+    /* transform: translateX(171vh); */
+    /* margin-left: 171vh; */
+}
+@keyframes road {
+
+    100%{
+        transform: translate(-100%);
+    }
+}
+/* .car1{
+    background-image: url(/images/car_1-removebg-preview.png);
+    width: 50vh;
+    height: 50vh;
+    margin-top: -40vh;
+} */

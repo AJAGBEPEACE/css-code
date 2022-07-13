@@ -1,0 +1,61 @@
+#circle{ 
+    /* border: thick solid black; */
+    position: relative; 
+    width: 100%;
+    height: 800px;
+}
+body{
+background-color: black;
+}
+.flex-red{
+    /* border: thick solid blue; */
+    border-radius: 50%;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    position: fixed;
+    right: 450px;
+    z-index: 3;
+    mix-blend-mode: screen;
+    /* right: 50%;
+    top: 10%;
+    left: 30%;
+    bottom: 4%; */
+    
+}
+.flex-blue{
+    /* border: thick solid red; */
+    border-radius: 50%;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: fixed;
+    /* right: 10%;
+    /* top: 600px; */
+    left: 30%;
+    z-index: 1;
+    mix-blend-mode: screen;
+    /* bottom: 10%; */ 
+}
+
+.flex-green{
+    /* border: thick solid black; */
+    border-radius: 50%;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    position: fixed;
+    /* right: 100px; */
+    left: 600px;
+    top: 200px;
+    z-index: 2;
+    mix-blend-mode: screen;
+    /* bottom: 10%; */
+}
+    /* right: 50%;
+    left: 50%;
+    bottom: 5%;
+} */

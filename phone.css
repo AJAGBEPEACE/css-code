@@ -1,0 +1,19 @@
+/* @media (max-width: 600px) { */
+    @media (min-width: 600px) and (max-width: 800px) {
+        .container {
+            flex-direction: column;
+            background-color: aqua;
+        }
+    
+    }
+    @media screen and (min-width: 800px)  {
+        .container {
+            flex-direction: column;
+            background-color: olive;
+        }
+    @media print {
+        header {
+            display: none;
+        }
+    }
+    }

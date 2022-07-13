@@ -1,0 +1,117 @@
+@keyframes tyre {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 10px 50%;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: blue;
+        border-radius: 50%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translateX(300px);
+    }
+
+    50% {
+        transform: translate(300px, 300px);
+    }
+
+    
+    75% {
+        transform: translate(-300px, 300px);
+    }
+
+    
+    100% {
+        transform: translate(-300px, -300px);
+        background-color: blue;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(50%);
+    }
+
+    to {
+        transform: scale(150%);
+        background-color: green;
+    }
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 100px 500px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: tyre;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction:alternate;
+    animation-delay: 3s;
+    /* animation-play-state: paused; */
+}
+
+
+
+
+body {
+    perspective: 1000px;
+}
+
+
+ img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    /* filter: grayscale(100%); */
+    /* filter: blur(5px); */
+    /* filter: brightness(500%); */
+    /* filter: contrast(500%); */
+    /* filter: drop-shadow(10px 10px 50px red); */
+    /* filter: hue-rotate(100deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(200%); */
+    /* filter: saturate(20%); */
+    filter: sepia(100%);
+ }
+
+
+ section {
+     display: flex;
+     min-height: 80vh;
+     border: thick solid blue;
+     perspective: 1000px;
+ }
+
+ section div {
+     background-color: blue;
+     width: 30%;
+     height: 250px;
+     margin: 10px;
+ }
+
+section div:nth-of-type(2) {
+    /* transform: translate(50px, 100px); */
+    /* transform: rotateY(60deg); */
+    /* transform: scale(150%, 10%); */
+    /* transform: skew(20deg, 0deg); */
+
+    background-color: red;
+    align-self: flex-end;
+}
